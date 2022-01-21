@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>book appointment</title>
+        <style>
+            body{
+                background-repeat:unset;
+                
+            }
+            
+            section{
+                padding: 20px;
+                padding-top: 10px;
+                font-family: serif;
+                font-size: large;
+                color: rgb(3, 10, 1);
+                background-color: #5b9fc7;
+                border-style: solid;
+                border-radius: 10px;
+                height:300px;
+                width: 600px;
+                margin: auto;
+                margin: 20 0 0 450px;
+            }
+            .button{
+                background-color: rgb(243, 240, 243);
+                border-color:#0c0c0c;
+                padding: 5px;
+                padding-top: 5px;  
+                border-style: solid;
+                border-radius: 2px;
+                height: 5px;
+                width: 5px;
+                margin: auto;
+                margin: 20 0 0 450px;             
+            }
+        </style>
+    </head>
+    <body>
+        <body background="app.jpeg" width=250 height=250>
+        <body text="#191970">
+        <div>
+            <h2 align="center"><u>BOOK APPOINTMENT !!</u></h2>
+        </div>
+        <br>
+        <section>
+            
+        <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
+        <fieldset>
+            <legend>For person</legend>
+            <label>Name<input type="text" name="name" required></label> <br>
+            <body>
+                <label for="gender"> Select you gender</label>
+                <select name="gender">
+                    <option value="none" selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">other</option>
+                </select>
+            </body><br>
+            <label>age<input type="number" name="age" required></label> <br>
+            <label>Email address<input type="email" name="email" required></label><br>  
+            <label>Phone number<input type="tel" name="phone"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Appointment request</legend>
+            <div class="two-cols">
+            <label>date<input type="date" name="Appointment request" required></label><br>
+            <body>
+                <label for="timeslot"> Select you time slot</label>
+                <select name="timeslot">
+                    <option value="none" selected>select time</option>
+                    <option value="10AM">10.00AM</option>
+                    <option value="11AM">11.00AM</option>
+                    <option value="12PM">12.00PM</option>
+                    <option value="12PM">1.00PM</option>
+                    <option value="12PM">2.00PM</option>
+                    <option value="12PM">3.00PM</option>
+                </select>
+            </body><br>
+            <label><input type="radio">above given details are true</label>
+            </div>
+        </fieldset>
+        <div class="btns">
+            <input type="text" name="_gotcha" value="" style="display:none;">
+            <input type="submit" value="Submit Application">
+        </div>
+    </form>
+        </section>
+    </body>
+
+</html>
